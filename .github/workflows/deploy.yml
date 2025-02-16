@@ -38,7 +38,7 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.REMOTE_KEY }}
           script: |
-            cd ~/deploy
+            cd /var/www/html/calculadora3
             sudo chmod 666 /var/run/docker.sock
             docker compose down || true
             docker compose pull
