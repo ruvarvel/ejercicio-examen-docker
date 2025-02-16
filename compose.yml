@@ -1,0 +1,6 @@
+services:
+  php:
+    image: ruvarvel/calculadora3:v1
+    container_name: contenedorMiApp3
+    ports:
+      - "8080:80"
